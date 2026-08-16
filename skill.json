@@ -1,0 +1,35 @@
+{
+  "name": "genpark-autonomous-agent-fleet-container-deployer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - One-click autonomous agent fleet deployer, worker scaling & container lifecycle orchestrator.",
+  "author": "genpark",
+  "category": "developer",
+  "tags": [
+    "fleet-deployer",
+    "container-orchestrator",
+    "worker-scaling",
+    "agent-lifecycle",
+    "ph-august16"
+  ],
+  "inputs": {
+    "fleet_config": {
+      "type": "object"
+    },
+    "target_cluster_region": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "deployed_containers_count": {
+      "type": "integer"
+    },
+    "fleet_status": {
+      "type": "string"
+    },
+    "health_check_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
